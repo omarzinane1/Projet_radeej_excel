@@ -1,0 +1,142 @@
+ /* Style pour le formulaire */
+ body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+ }
+
+
+ table {
+   
+   border-collapse: collapse;
+ }
+
+ .continte_form {
+   overflow: scroll;
+ }
+
+ thead {
+   background-color: #f2f2f2;
+ }
+
+ th,
+ td {
+   text-align: center;
+   padding: 8px;
+   border: 1px solid #ddd;
+   width: 100%;
+ }
+
+ tr:hover {
+   background-color: #f5f5f5;
+ }
+
+ #titre_grand {
+   text-align: center;
+   font-size: 24px;
+   margin-bottom: 20px;
+ }
+
+
+
+ /* Style pour les boutons */
+ button {
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 5px;
+ }
+
+ button:hover {
+   background-color: #3e8e41;
+ }
+
+ /* Style pour les boutons "Enregistrer" */
+ button[type="submit"] {
+   background-color: #008CBA;
+ }
+
+ button[type="submit"]:hover {
+   background-color: #007ba7;
+ }
+
+ /* Style pour les champs de saisie */
+ input[type="text"] {
+   width: 100%;
+   height: 100%;
+   padding: 12px 20px;
+
+   box-sizing: border-box;
+   border: 2px solid #ccc;
+   border-radius: 4px;
+   background-color: #f8f8f8;
+   font-size: 16px;
+ }
+
+ input[type="text"]:focus,
+ input[type="number"]:focus {
+   outline: none;
+   border-color: #4CAF50;
+   box-shadow: 0 0 8px
+ }
+
+ .message-container {
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   margin: 1rem;
+ }
+
+
+ .message-container .message {
+   /* Style  */
+   color: rgb(18, 86, 18);
+   background-color: rgb(97, 218, 97);
+   padding: 20px;
+
+ }
+
+ .message-container.closed .message {
+   display: none;
+ }
+
+ .close-button {
+   /* Style de votre bouton */
+   background-color: rgb(97, 218, 97);
+   margin-left: 10px;
+   border: none;
+
+ }
+
+ a {
+   text-decoration: none;
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 5px;
+ }
+
+ a:hover {
+   text-decoration: underline;
+   background-color: #3e8e41;
+ }
+
+ h2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }

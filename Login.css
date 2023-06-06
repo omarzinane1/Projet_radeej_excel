@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+body {
+  background-image: url('excel-g93cbab015_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+
+  opacity: 0.9;
+  /* Opacité de l'image */
+  filter: blur(0px);
+  /* Flou de l'image */
+}
+
+form {
+  background-color: #f7f1f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 350px;
+}
+
+form img {
+  width: 100px;
+  /* Ajuste la taille du logo selon tes besoins */
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #fff;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contenu_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  transition: border-color 0.3s;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+  border-color: #3b883e;
+}
+
+form input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+form a {
+  color: #7e7d7d;
+  text-decoration: none;
+
+}
+
+form a:hover {
+  text-decoration: underline;
+  color: #3b883e;
+}
+
+/**** form oubile password******/
+
+.oublie_pass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*******************************/
+
+/******** section de message ********/
+
+.message-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+}
+
+
+.message-container .message {
+  /* Style  */
+  color: rgb(18, 86, 18);
+  background-color: rgb(97, 218, 97);
+  padding: 20px;
+ 
+}
+
+.message-container.closed .message {
+  display: none;
+}
+
+.close-button {
+  /* Style de votre bouton */
+ background-color: rgb(97, 218, 97) ;
+ margin-left: 10px;
+ border: none;
+
+}
+
+/************************************/

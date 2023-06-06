@@ -1,0 +1,330 @@
+ /* Styles pour la barre de navigation */
+ body {
+   background-color: #f8f8f8;
+   font-family: Arial, sans-serif;
+ }
+
+ /* Styles pour le formulaire de sélection des valeurs */
+
+ .continer_form {
+   display: flex;
+   flex-direction: column;
+
+ }
+
+ .meun_btn {
+   margin: 20px;
+   padding: 20px;
+   background-color: #f2f2f2;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+
+ }
+
+
+ .checkbox label {
+   display: block;
+   margin-bottom: 5px;
+ }
+
+ input[type="checkbox"] {
+   margin-right: 5px;
+ }
+
+ label {
+   font-weight: 500;
+ }
+
+ input[type="number"] {
+   width: 95%;
+   padding: 5px;
+   margin-bottom: 10px;
+   border: none;
+   background-color: #aaa;
+ }
+
+ input[type="number"]:hover {
+   background-color: #94ec97;
+ }
+
+ .btnPV {
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+
+ .btnPV:hover {
+   background-color: #45a049;
+ }
+
+
+ .checkbox {
+   display: flex;
+   flex-direction: row;
+ }
+
+ .continer_form label {
+   margin: 10px 10px;
+ }
+#select_ligne{
+  padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   width: 27%;
+}
+ select {
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   width: 70px;
+ }
+
+ /* Style pour les options sélectionnées */
+ select option:checked {
+   background-color: #f5f5f5;
+ }
+
+ /* Style pour la flèche de la liste déroulante */
+ select::-ms-expand {
+   display: none;
+ }
+
+ /* Style pour la bordure focus */
+ select:focus {
+   outline: none;
+   border-color: #5b9dd9;
+   box-shadow: 0 0 5px rgba(91, 157, 217, 0.5);
+ }
+
+
+
+ #titre_grand {
+   display: flex;
+   justify-content: center;
+   align-self: center;
+ }
+
+ #options {
+   display: flex;
+   justify-content: center;
+ }
+
+ @media print {
+   .dontprint {
+     display: none;
+   }
+
+   .meun_btn {
+     display: none;
+   }
+ }
+
+
+
+ /* Styles pour les boutons */
+ .dontprint {
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   padding: 10px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+ }
+
+ .meun_btn {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .btn {
+   background-color: #4CAF50;
+   border: none;
+   border-radius: 5px;
+   color: white;
+   padding: 10px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+ }
+
+ button#Imprimer {
+   background-color: #555;
+   border-radius: 5px;
+   float: right;
+ }
+
+ /* Styles pour la table */
+ 
+ #printable {
+  max-height: 1000px; 
+  overflow: auto; 
+}
+
+ table {
+   border-collapse: separate;
+   width: 100%;
+   margin-top: 20px;
+ }
+
+ th,
+ td {
+   text-align: left;
+   padding: 8px;
+   border-bottom: 1px solid #ddd;
+ }
+
+ th {
+   background-color: #4CAF50;
+   color: white;
+ }
+
+ tr#center_tr {
+   font-weight: bold;
+   text-align: center;
+ }
+
+ /* section de message */
+
+ .message-container {
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   margin: 1rem;
+ }
+
+
+ .message-container .message {
+   /* Style  */
+   color: rgb(18, 86, 18);
+   background-color: rgb(97, 218, 97);
+   padding: 20px;
+
+ }
+
+ .message-container.closed .message {
+   display: none;
+ }
+
+ .close-button {
+   /* Style de votre bouton */
+   background-color: rgb(97, 218, 97);
+   margin-left: 10px;
+   border: none;
+
+ }
+
+ /*********************/
+
+ /* section de recuperation de donnée */
+ /* Style du formulaire de confirmation */
+ #recuperer {
+   text-align: center;
+   margin: 20px 0;
+   padding: 20px;
+   background-color: #f0f0f0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+ }
+
+ #recuperer h3 {
+   margin-top: 0;
+ }
+
+ #recuperer button {
+   margin-right: 10px;
+   padding: 10px 20px;
+   background-color: #3a83f0;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+
+ }
+
+ #recuperer button:hover {
+   background-color: #aaa;
+ }
+
+
+
+ /*************************************/
+
+ /********** form modifier valeur ********************/
+ #form_valeur {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .continer_valeur {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 1px solid #ccc;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+ }
+
+ .continer_valeur label {
+   margin: 5px 10px;
+   font-size: 15px;
+ }
+
+ .valeur_tous {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   margin: 10px;
+
+ }
+
+ .input_valeur {
+   padding: 5px;
+   margin-bottom: 10px;
+   border: none;
+   background-color: #f59a9a;
+   
+ }
+
+ .input_valeur:hover {
+   background-color: #94ec97;
+ }
+
+ #select_valeur {
+   padding: 8px;
+   font-size: 14px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   width: 260px;
+
+ }
+
+ .btn_valeur {
+   padding: 10px 20px;
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   cursor: pointer;
+   margin-top: 10px;
+   width: 260px;
+   border-radius: 5px;
+ }
+
+ .btn_valeur:hover {
+   background-color: #4197e7;
+ }
+
+ /***************************************************/
